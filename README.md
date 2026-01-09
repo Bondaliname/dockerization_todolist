@@ -2,12 +2,12 @@
 
 A task management application (Todo List) built with Django. This project is designed to demonstrate skills in working with Django, Docker, and Docker Compose for portfolio purposes.
 
-## Features
+## Architecture
 
-- Fully functional Django-based Todo List
-- Containerization using Docker
-- MySQL database in a separate container
-- Ready-to-use configuration for quick deployment
+The project uses:
+- **Docker** - for containerizing the Django application
+- **MySQL** - as the database in a separate Docker container
+- **Docker Compose** - for orchestrating the multi-container application
 
 ## Running Locally
 
@@ -73,10 +73,3 @@ docker system prune -a --volumes
 The project includes a `.env.example` file with sample environment settings.
 
 You can create your own `.env` file based on `.env.example` to customize the settings.
-
-## Architecture
-
-The project uses:
-- **Docker** - for containerizing the Django application
-- **MySQL** - as the database in a separate Docker container
-- **Docker Compose** - for orchestrating the multi-container application
